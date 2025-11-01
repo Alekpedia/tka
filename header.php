@@ -93,7 +93,7 @@
         </a>
         
         <div class="hidden md:flex items-center space-x-8">
-            <a href="/" class="text-gray-600 hover:text-blue-700 font-medium">INFO TKA</a>
+            <a href="/tka" class="text-gray-600 hover:text-blue-700 font-medium">Materi TKA</a>
             <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">SD/MI</a>
             <a href="/tka/smp" class="text-gray-600 hover:text-blue-700 font-medium">SMP/MTS</a>
             <a href="/tka/sma" class="text-gray-600 hover:text-blue-700 font-medium">SMA/SMK/MA</a>
