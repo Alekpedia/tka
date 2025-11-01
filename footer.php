@@ -2,7 +2,7 @@
     <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="mb-6 md:mb-0">
-                <h3 class="text-2xl font-bold text-blue-800 mb-4">Latihan TKA</h3>
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Kampus Impian</h3>
                 <p class="text-slate-500 text-sm">Platform terintegrasi untuk persiapan Ujian Sekolah, TKA, dan UTBK.</p>
             </div>
             <div>

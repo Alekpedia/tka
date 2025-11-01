@@ -89,7 +89,7 @@
 <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="/" class="text-2xl font-bold text-blue-800">
-            Latihan TKA
+            Kampus Impian
         </a>
         
         <div class="hidden md:flex items-center space-x-8">
