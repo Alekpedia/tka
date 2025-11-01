@@ -67,6 +67,58 @@
             }
         });
     </script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Accordion Logic ---
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    if (accordionHeaders.length > 0) {
+        accordionHeaders.forEach((header, index) => {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+
+            // Buka item pertama (Tips Umum) secara default
+            if (index === 0) {
+                if(content) content.style.maxHeight = content.scrollHeight + "px";
+                if(icon) icon.style.transform = 'rotate(180deg)';
+                header.classList.add('open');
+            } else {
+                 if(content) content.style.maxHeight = null;
+            }
+
+            header.addEventListener('click', () => {
+                const isOpen = content.style.maxHeight;
+
+                // Tutup semua accordion lain
+                accordionHeaders.forEach(h => {
+                    if (h !== header) {
+                        h.nextElementSibling.style.maxHeight = null;
+                        const otherIcon = h.querySelector('.accordion-icon');
+                        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                        h.classList.remove('open');
+                    }
+                });
+                
+                // Buka/tutup yang diklik
+                if (isOpen) {
+                    content.style.maxHeight = null; // Tutup
+                    if(icon) icon.style.transform = 'rotate(0deg)';
+                    header.classList.remove('open');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px"; // Buka
+                    if(icon) icon.style.transform = 'rotate(180deg)';
+                    header.classList.add('open');
+                }
+            });
+        });
+    }
+
+    // --- Re-run Lucide ---
+    lucide.createIcons();
+});
+</script>
     
 </body>
 </html>
