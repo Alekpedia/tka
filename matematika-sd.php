@@ -4,7 +4,7 @@
     $page_description = 'Pilih paket soal latihan TKA Matematika SD/MI yang ingin kamu kerjakan di bawah ini.';
     
     // [PENTING] Path include berubah menjadi '../../' karena kita 2 level di dalam folder
-    include '../../header.php'; 
+    include 'header.php'; 
 ?>
 
 <main>
@@ -104,5 +104,5 @@
 </main>
 <?php 
     // [PENTING] Path include berubah menjadi '../../' 
-    include '../../footer.php'; 
+    include 'footer.php'; 
 ?>
