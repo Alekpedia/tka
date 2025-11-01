@@ -4,30 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-   <title>Materi dan Soal TKA Lengkap | Kampus Impian</title>
-   <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="index, follow"> <meta name="author" content="@rangkumanmateri_"> <meta property="og:title" content="Rangkumanmateri - Platform Catatan & Latihan Online">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website"> <meta property="og:url" content="https://rangkumanmateri.com/">
-    <meta property="og:image" content="/path/ke/gambar/default_social_media.jpg"> <meta property="og:site_name" content="Rangkumanmateri.com">
-    <meta name="google-site-verification" content="vbH6pQeUamJFGybWjpJ9Gqn8FnEX-JPDtecJYGW9fb8" />
+    <?php
+        // Atur nilai default jika variabel tidak di-set di halaman (index.php, latihan-sd.php, dll.)
+        $page_title = isset($page_title) ? $page_title : 'Latihan TKA - Platform Belajar Online';
+        $page_description = isset($page_description) ? $page_description : 'Kumpulan latihan soal TKA, UTBK, dan persiapan masuk PTN.';
+        $page_url = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        // Gunakan logo default yang kamu tentukan
+        $page_image = isset($page_image) ? $page_image : 'https://kampusimpian.com/wp-content/uploads/2025/10/kampusimpianlogo.png'; 
+    ?>
+
+    <title><?php echo htmlspecialchars($page_title); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
+    <link rel="canonical" href="<?php echo htmlspecialchars($page_url); ?>">
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="@rangkumanmateri_"> 
+
+    <meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($page_description); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($page_url); ?>">
+    <meta property="og:image" content="<?php echo htmlspecialchars($page_image); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Latihan TKA">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($page_title); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($page_image); ?>">
+
+    <meta name="msvalidate.01" content="BF002046016B0B7A8843EF446F736C79" class="yoast-seo-meta-tag" />
+    <meta name="google-site-verification" content="I6IztRvAjmAR4ZU2QOGK1Mvvpn1DDif6bAu_B9S1T9s" class="yoast-seo-meta-tag" />
+    <meta name="yandex-verification" content="26ae70c056d73598" class="yoast-seo-meta-tag" />
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-180x180.png" />
-<meta name="msapplication-TileImage" content="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-270x270.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
     <script src="https://unpkg.com/lucide@latest"></script>
-    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7258890957316842"
-     crossorigin="anonymous"></script>
+    <link rel="icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-270x270.png" />
 
     <style>
         body {
@@ -37,7 +55,7 @@
             color: #1e293b; 
         }
         
-        /* [BARU] CSS UNTUK STICKY FOOTER */
+        /* CSS UNTUK STICKY FOOTER */
         html, body { 
             height: 100%; /* Pastikan html dan body setinggi 100% */
         }

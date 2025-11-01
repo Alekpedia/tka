@@ -1,4 +1,9 @@
 <?php 
+    // [BARU] Definisikan meta tag untuk halaman ini
+    $page_title = 'Latihan Soal TKA Lengkap SD SMP SMA Lengkap';
+    $page_description = 'Silakan pilih soal TKA yang kamu pelajari, mulai dari SD, SMP, hingga SMA/SMK/MA.';
+    // $page_image = 'https' // (Opsional) Ganti gambar jika perlu
+
     // Memasukkan file header.php
     include 'header.php'; 
 ?>
