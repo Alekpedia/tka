@@ -81,12 +81,10 @@
              Kampus Impian
         </a>
         <div class="hidden md:flex items-center space-x-8">
-            <a href="#" class="text-gray-600 hover:text-blue-700 font-medium">Info Kampus</a>
-            <a href="#" class="text-gray-600 hover:text-blue-700 font-medium">Nilai Raport</a>
-            <a href="#" class="text-gray-600 hover:text-blue-700 font-medium">Passing Grade</a>
-            <a href="#" class="text-gray-600 hover:text-blue-700 font-medium">KIP Kuliah</a>
-            <a href="#" class="text-gray-600 hover:text-blue-700 font-medium">SNBP</a>
-            <a href="#" class="text-gray-600 hover:text-blue-700 font-medium">SNBT</a>
+            <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">Info TKA</a>
+            <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">TKA SD/MI</a>
+            <a href="/tka/smp" class="text-gray-600 hover:text-blue-700 font-medium">TKA SMP/MTS</a>
+            <a href="/tka/sma" class="text-gray-600 hover:text-blue-700 font-medium">TKA SMA/SMK/MA</a>
         </div>
         <a href="#" target="_blank" class="hidden md:block cta-gradient text-white font-semibold px-6 py-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
             Mulai Belajar
@@ -97,12 +95,10 @@
     </nav>
     
     <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-        <a href="#" class="block py-2 text-gray-600 hover:text-blue-700">Info Kampus</a>
-        <a href="#" class="block py-2 text-gray-600 hover:text-blue-700">Nilai Raport</a>
-        <a href="#" class="block py-2 text-gray-600 hover:text-blue-700">Passing Grade</a>
-        <a href="#" class="block py-2 text-gray-600 hover:text-blue-700">KIP Kuliah</a>
-        <a href="#" class="block py-2 text-gray-600 hover:text-blue-700">SNBP</a>
-        <a href="#" class="block py-2 text-gray-600 hover:text-blue-700">SNBT</a>
+        <a href="/tka/sd" class="block py-2 text-gray-600 hover:text-blue-700">Info TKA</a>
+        <a href="/tka/sd" class="block py-2 text-gray-600 hover:text-blue-700">TKA SD/MI</a>
+        <a href="/tka/smp" class="block py-2 text-gray-600 hover:text-blue-700">TKA SMP/MTS</a>
+        <a href="/tka/sma" class="block py-2 text-gray-600 hover:text-blue-700">TKA SMA/SMK/MA</a>
         <a href="#" target="_blank" class="block mt-4 cta-gradient text-white text-center font-semibold px-6 py-2 rounded-lg shadow-md">
             Mulai Belajar
         </a>
