@@ -26,7 +26,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-bold text-slate-800 mb-1">SD / MI</h3>
-                            <p class="text-sm text-slate-500">Kumpulan soal latihan TKA untuk murid Sekolah Dasar dan Madrasah Ibtidaiyah.</p>
+                            <p class="text-sm text-slate-500">Kumpulan Soal Latihan TKA untuk Jenjang Pendidikan Sekolah Dasar dan Madrasah Ibtidaiyah.</p>
                         </div>
                     </div>
                 </a>
@@ -34,11 +34,11 @@
                 <a href="/tka/smp" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20" data-aos="fade-up" data-aos-delay="150">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-purple-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
-                            <i data-lucide="graduation-cap" class="w-7 h-7 text-purple-600"></i>
+                            <i data-lucide="school" class="w-7 h-7 text-purple-600"></i>
                         </div>
                         <div>
                             <h3 class="text-lg font-bold text-slate-800 mb-1">SMP / MTs</h3>
-                            <p class="text-sm text-slate-500">Kumpulan soal latihan TKA untuk murid Sekolah Menengah Pertama dan Madrasah Tsanawiyah.</p>
+                            <p class="text-sm text-slate-500">Kumpulan Soal Latihan TKA untuk Jenjang Pendidikan Sekolah Menengah Pertama dan Madrasah Tsanawiyah.</p>
                         </div>
                     </div>
                 </a>
@@ -46,11 +46,11 @@
                 <a href="/tka/sma" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-teal-500/20" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-teal-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
-                            <i data-lucide="book-open" class="w-7 h-7 text-teal-600"></i>
+                            <i data-lucide="graduation-cap" class="w-7 h-7 text-teal-600"></i>
                         </div>
                         <div>
                             <h3 class="text-lg font-bold text-slate-800 mb-1">SMA / SMK / MA</h3>
-                            <p class="text-sm text-slate-500">Kumpulan soal latihan TKA untuk murid Sekolah Menengah Atas, Kejuruan dan Madrasah Aliyah.</p>
+                            <p class="text-sm text-slate-500">Kumpulan Soal Latihan TKA untuk Jenjang Pendidikan Sekolah Menengah Atas, Kejuruan dan Madrasah Aliyah.</p>
                         </div>
                     </div>
                 </a>
