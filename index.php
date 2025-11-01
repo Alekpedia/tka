@@ -55,14 +55,14 @@
                     </div>
                 </a>
 
-                <a href="#" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-rose-500/20" data-aos="fade-up" data-aos-delay="100">
+                <a href="/tka/jadwal" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-rose-500/20" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-rose-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="info" class="w-7 h-7 text-rose-600"></i>
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-1">Info Pelaksanaan TKA</h3>
-                            <p class="text-sm text-slate-500">Dapatkan info terbaru seputar jadwal, materi, dan tips sukses TKA.</p>
+                            <h3 class="text-lg font-bold text-slate-800 mb-1">Jadwal Pelaksanaan TKA</h3>
+                            <p class="text-sm text-slate-500">Informasi Jadwal Pelaksanaan TKA untuk semua jenjang Pendidikan SD hingga SMA Sederajat.</p>
                         </div>
                     </div>
                 </a>
