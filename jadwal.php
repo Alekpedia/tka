@@ -1,6 +1,6 @@
 <?php 
     // Definisikan meta tag untuk halaman ini
-    $page_title = 'Jadwal Pelaksanaan TKA 2026';
+    $page_title = 'Jadwal Pelaksanaan TKA 2025-2026';
     $page_description = 'Informasi resmi dan countdown jadwal pelaksanaan TKA untuk jenjang SD, SMP, dan SMA/SMK/MA.';
     
     // Memasukkan file header.php
@@ -25,6 +25,48 @@
             </div>
 
             <div class="max-w-3xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="border border-teal-200 rounded-lg bg-white overflow-hidden shadow-lg">
+                    <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-left text-slate-800 bg-teal-50">
+                        <span class="flex items-center space-x-3">
+                            <i data-lucide="book-open" class="w-6 h-6 text-teal-600"></i>
+                            <span class="text-lg font-bold">TKA SMA / SMK / MA</span>
+                        </span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform accordion-icon flex-shrink-0 text-slate-500"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-5 border-b border-teal-100 bg-teal-50/50">
+                            <h4 class="text-base font-semibold text-teal-800 mb-3 flex items-center">
+                                <i data-lucide="alarm-clock" class="w-5 h-5 mr-2"></i>
+                                Waktu Mundur Pelaksanaan Utama TKA
+                            </h4>
+                            <div id="countdown-sma" class="grid grid-cols-4 gap-2 text-center">
+                                <div>
+                                    <span id="sma-days" class="text-3xl font-bold text-teal-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Hari</span>
+                                </div>
+                                <div>
+                                    <span id="sma-hours" class="text-3xl font-bold text-teal-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Jam</span>
+                                </div>
+                                <div>
+                                    <span id="sma-minutes" class="text-3xl font-bold text-teal-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Menit</span>
+                                </div>
+                                <div>
+                                    <span id="sma-seconds" class="text-3xl font-bold text-teal-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Detik</span>
+                                </div>
+                            </div>
+                        </div>
+                         <ul class="space-y-3 p-5 text-gray-600">
+                            <li class="flex items-center"><i data-lucide="pencil" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Pelaksanaan utama TKA: 3 – 6 November 2025</li>
+                            <li class="flex items-center"><i data-lucide="calendar-plus" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Pendaftaran: (Segera diumumkan)</li>
+                            <li class="flex items-center"><i data-lucide="printer" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Cetak Kartu Ujian: (Segera diumumkan)</li>
+                            <li class="flex items-center"><i data-lucide="file-check" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Pengumuman Kelulusan: (Segera diumumkan)</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="border border-blue-200 rounded-lg bg-white overflow-hidden shadow-lg">
                     <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-left text-slate-800 bg-blue-50">
@@ -110,47 +152,6 @@
                     </div>
                 </div>
 
-                <div class="border border-teal-200 rounded-lg bg-white overflow-hidden shadow-lg">
-                    <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-left text-slate-800 bg-teal-50">
-                        <span class="flex items-center space-x-3">
-                            <i data-lucide="book-open" class="w-6 h-6 text-teal-600"></i>
-                            <span class="text-lg font-bold">TKA SMA / SMK / MA</span>
-                        </span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform accordion-icon flex-shrink-0 text-slate-500"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-5 border-b border-teal-100 bg-teal-50/50">
-                            <h4 class="text-base font-semibold text-teal-800 mb-3 flex items-center">
-                                <i data-lucide="alarm-clock" class="w-5 h-5 mr-2"></i>
-                                Waktu Mundur Ujian (SMA/SMK/MA)
-                            </h4>
-                            <div id="countdown-sma" class="grid grid-cols-4 gap-2 text-center">
-                                <div>
-                                    <span id="sma-days" class="text-3xl font-bold text-teal-700">00</span>
-                                    <span class="block text-xs font-medium text-slate-500">Hari</span>
-                                </div>
-                                <div>
-                                    <span id="sma-hours" class="text-3xl font-bold text-teal-700">00</span>
-                                    <span class="block text-xs font-medium text-slate-500">Jam</span>
-                                </div>
-                                <div>
-                                    <span id="sma-minutes" class="text-3xl font-bold text-teal-700">00</span>
-                                    <span class="block text-xs font-medium text-slate-500">Menit</span>
-                                </div>
-                                <div>
-                                    <span id="sma-seconds" class="text-3xl font-bold text-teal-700">00</span>
-                                    <span class="block text-xs font-medium text-slate-500">Detik</span>
-                                </div>
-                            </div>
-                        </div>
-                         <ul class="space-y-3 p-5 text-gray-600">
-                            <li class="flex items-center"><i data-lucide="calendar-plus" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Pendaftaran: 1 Februari - 28 Februari 2026</li>
-                            <li class="flex items-center"><i data-lucide="printer" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Cetak Kartu Ujian: 14 Maret 2026</li>
-                            <li class="flex items-center"><i data-lucide="pencil" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Ujian Tulis: 20 Maret - 25 Maret 2026</li>
-                            <li class="flex items-center"><i data-lucide="file-check" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Pengumuman Kelulusan: 10 April 2026</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -158,7 +159,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. [BARU] Countdown Timer ---
+    // --- 1. [DIUBAH] Countdown Timer ---
     
     /**
      * Fungsi untuk memulai countdown timer.
@@ -197,11 +198,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 
-    // --- [GANTI TANGGAL INI] ---
-    // Atur tanggal tujuan countdown kamu (berdasarkan tanggal UJIAN TULIS)
+    // --- [DIUBAH] Tanggal Tujuan Countdown ---
     const dateSD = new Date("March 15, 2026 08:00:00").getTime();
     const dateSMP = new Date("March 18, 2026 08:00:00").getTime();
-    const dateSMA = new Date("March 20, 2026 08:00:00").getTime();
+    const dateSMA = new Date("November 3, 2025 08:00:00").getTime(); // Sesuai info baru
     
     // Panggil 3 countdown yang berbeda
     initializeCountdown(dateSD, "sd", "countdown-sd");
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const content = header.nextElementSibling;
             const icon = header.querySelector('.accordion-icon');
 
-            // Buka item pertama (SD/MI) secara default
+            // Buka item pertama (SMA) secara default
             if (index === 0) {
                 if(content) content.style.maxHeight = content.scrollHeight + "px";
                 if(icon) icon.style.transform = 'rotate(180deg)';
@@ -254,7 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 3. Re-run Lucide ---
-    // (Panggil ulang untuk merender ikon di dalam accordion)
     lucide.createIcons();
 });
 </script>
