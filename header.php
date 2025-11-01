@@ -71,6 +71,17 @@
 
         .cta-gradient { background-image: linear-gradient(to right, #581c87, #0e7490); transition: all 0.3s ease; }
         .cta-gradient:hover { box-shadow: 0 10px 20px -10px rgba(34, 211, 238, 0.4); transform: translateY(-2px); }
+
+        /* [BARU] Tombol WhatsApp */
+        .btn-whatsapp {
+            background-color: #25D366;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1EBE5A; /* Warna hover sedikit lebih gelap */
+            box-shadow: 0 10px 20px -10px rgba(37, 211, 102, 0.4); 
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body class="bg-slate-50"> 
@@ -99,8 +110,9 @@
         <a href="/tka/sd" class="block py-2 text-gray-600 hover:text-blue-700">TKA SD/MI</a>
         <a href="/tka/smp" class="block py-2 text-gray-600 hover:text-blue-700">TKA SMP/MTS</a>
         <a href="/tka/sma" class="block py-2 text-gray-600 hover:text-blue-700">TKA SMA/SMK/MA</a>
-        <a href="#" target="_blank" class="block mt-4 cta-gradient text-white text-center font-semibold px-6 py-2 rounded-lg shadow-md">
-            Mulai Belajar
+        <a href="#" target="_blank" class="flex items-center justify-center mt-4 btn-whatsapp text-white text-center font-semibold px-6 py-2 rounded-lg shadow-md">
+            <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
+            Gabung Saluran WA
         </a>
     </div>
 </header>
