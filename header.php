@@ -97,8 +97,9 @@
             <a href="/tka/smp" class="text-gray-600 hover:text-blue-700 font-medium">SMP/MTS</a>
             <a href="/tka/sma" class="text-gray-600 hover:text-blue-700 font-medium">SMA/SMK/MA</a>
         </div>
-        <a href="#" target="_blank" class="hidden md:block cta-gradient text-white font-semibold px-6 py-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
-            Mulai Belajar
+       <a href="#" target="_blank" class="hidden md:inline-flex items-center justify-center btn-whatsapp text-white font-semibold px-6 py-2 rounded-lg shadow-md transition-transform transform">
+            <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
+            Gabung Saluran WA
         </a>
         <button id="mobile-menu-button" class="md:hidden">
             <i data-lucide="menu" class="w-6 h-6 text-gray-600"></i>
@@ -110,7 +111,7 @@
         <a href="/tka/sd" class="block py-2 text-gray-600 hover:text-blue-700">TKA SD/MI</a>
         <a href="/tka/smp" class="block py-2 text-gray-600 hover:text-blue-700">TKA SMP/MTS</a>
         <a href="/tka/sma" class="block py-2 text-gray-600 hover:text-blue-700">TKA SMA/SMK/MA</a>
-        <a href="#" target="_blank" class="flex items-center justify-center mt-4 btn-whatsapp text-white text-center font-semibold px-6 py-2 rounded-lg shadow-md">
+       <a href="#" target="_blank" class="flex items-center justify-center mt-4 btn-whatsapp text-white text-center font-semibold px-6 py-2 rounded-lg shadow-md">
             <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
             Gabung Saluran WA
         </a>
