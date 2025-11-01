@@ -16,7 +16,7 @@
                     Jadwal Pelaksanaan TKA
                 </h1>
                 <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                    Countdown dan informasi resmi jadwal ujian TKA untuk semua jenjang.
+                    Informasi Pelaksanaan TKA, bisa kamu lihat dibawah ini. Jika jadwal mengalami perubahan, akan kami update segera.
                 </p>
             </div>
             
