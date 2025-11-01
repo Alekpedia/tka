@@ -1,7 +1,7 @@
 <?php 
     // Definisikan meta tag untuk halaman ini
-    $page_title = 'Latihan Soal TKA Matematika SMA/SMK/MA';
-    $page_description = 'Pilih paket soal latihan TKA Matematika SMA/SMK/MA yang ingin kamu kerjakan di bawah ini.';
+    $page_title = 'Latihan Soal TKA Bahasa Indonesia SMA/SMK/MA';
+    $page_description = 'Pilih paket soal latihan TKA Bahasa Indonesia SMA/SMK/MA yang ingin kamu kerjakan di bawah ini.';
 
     // [PENTING] Path include berubah menjadi '../../' karena kita 2 level di dalam folder
     include 'header.php'; 
@@ -16,7 +16,7 @@
                     Latihan Soal TKA
                 </h1>
                 <h2 class="text-3xl md:text-4xl font-semibold text-gray-700 mt-2" data-aos="fade-up" data-aos-delay="100">
-                    Matematika SMA
+                    Bahasa Indonesia SMA/SMK/MA
                 </h2>
                 <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                     Silakan pilih paket soal yang ingin Kamu kerjakan di bawah ini.
