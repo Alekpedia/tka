@@ -81,10 +81,10 @@
              Kampus Impian
         </a>
         <div class="hidden md:flex items-center space-x-8">
-            <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">Info TKA</a>
-            <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">TKA SD/MI</a>
-            <a href="/tka/smp" class="text-gray-600 hover:text-blue-700 font-medium">TKA SMP/MTS</a>
-            <a href="/tka/sma" class="text-gray-600 hover:text-blue-700 font-medium">TKA SMA/SMK/MA</a>
+            <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">INFO TKA</a>
+            <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">SD/MI</a>
+            <a href="/tka/smp" class="text-gray-600 hover:text-blue-700 font-medium">SMP/MTS</a>
+            <a href="/tka/sma" class="text-gray-600 hover:text-blue-700 font-medium">SMA/SMK/MA</a>
         </div>
         <a href="#" target="_blank" class="hidden md:block cta-gradient text-white font-semibold px-6 py-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
             Mulai Belajar
