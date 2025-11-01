@@ -61,7 +61,7 @@
                             <i data-lucide="info" class="w-7 h-7 text-rose-600"></i>
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-1">Jadwal Pelaksanaan TKA</h3>
+                            <h3 class="text-lg font-bold text-slate-800 mb-1">Jadwal TKA</h3>
                             <p class="text-sm text-slate-500">Informasi Jadwal Pelaksanaan TKA untuk semua jenjang Pendidikan SD hingga SMA Sederajat.</p>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                             <i data-lucide="lightbulb" class="w-7 h-7 text-sky-600"></i>
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-1">Belajar Persiapan SNBT</h3>
+                            <h3 class="text-lg font-bold text-slate-800 mb-1">Tips Belajar TKA</h3>
                             <p class="text-sm text-slate-500">Materi lengkap dan soal latihan untuk persiapan Seleksi Nasional Berdasarkan Tes.</p>
                         </div>
                     </div>
