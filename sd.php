@@ -1,4 +1,9 @@
 <?php 
+    // [BARU] Definisikan meta tag untuk halaman ini
+    $page_title = 'Materi dan Soal TKA SD / MI Lengkap';
+    $page_description = 'Pilih mata pelajaran TKA SD/MI yang ingin kamu pelajari, tersedia Bahasa Indonesia dan Matematika.';
+    // $page_image = 'https(Opsional) Ganti gambar jika perlu, jika tidak akan pakai default';
+
     // Memasukkan file header.php
     include 'header.php'; 
 ?>
