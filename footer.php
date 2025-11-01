@@ -15,10 +15,10 @@
             <div>
                 <h3 class="font-semibold text-slate-900 mb-4">Bantuan & Panduan</h3>
                 <ul class="space-y-3">
-                    <li><a href="#" class="text-slate-500 hover:text-indigo-600 transition-colors">Tentang Kami</a></li>
-                    <li><a href="#" class="text-slate-500 hover:text-indigo-600 transition-colors">Kontak Kami</a></li>
-                    <li><a href="#" class="text-slate-500 hover:text-indigo-600 transition-colors">Kebijakan Privasi</a></li>
-                    <li><a href="#" class="text-slate-500 hover:text-indigo-600 transition-colors">Disclaimer</a></li>
+                    <li><a href="https://kampusimpian.com/about/" class="text-slate-500 hover:text-indigo-600 transition-colors">Tentang Kami</a></li>
+                    <li><a href="https://kampusimpian.com/contact/" class="text-slate-500 hover:text-indigo-600 transition-colors">Kontak Kami</a></li>
+                    <li><a href="https://kampusimpian.com/privacy-policy/" class="text-slate-500 hover:text-indigo-600 transition-colors">Kebijakan Privasi</a></li>
+                    <li><a href="https://kampusimpian.com/disclaimer/" class="text-slate-500 hover:text-indigo-600 transition-colors">Disclaimer</a></li>
                 </ul>
             </div>
             
