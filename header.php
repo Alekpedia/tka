@@ -93,7 +93,7 @@
         </a>
         
         <div class="hidden md:flex items-center space-x-8">
-            <a href="/tka" class="text-gray-600 hover:text-blue-700 font-medium">Materi TKA</a>
+            <a href="/tka" class="text-gray-600 hover:text-blue-700 font-medium">Beranda</a>
             <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">SD/MI</a>
             <a href="/tka/smp" class="text-gray-600 hover:text-blue-700 font-medium">SMP/MTS</a>
             <a href="/tka/sma" class="text-gray-600 hover:text-blue-700 font-medium">SMA/SMK/MA</a>
@@ -112,7 +112,7 @@
     </nav>
     
     <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-        <a href="/tka/sd" class="block py-2 text-gray-600 hover:text-blue-700">INFO TKA</a>
+        <a href="/tka" class="block py-2 text-gray-600 hover:text-blue-700">Beranda</a>
         <a href="/tka/sd" class="block py-2 text-gray-600 hover:text-blue-700"> SD/MI</a>
         <a href="/tka/smp" class="block py-2 text-gray-600 hover:text-blue-700"> SMP/MTS</a>
         <a href="/tka/sma" class="block py-2 text-gray-600 hover:text-blue-700"> SMA/SMK/MA</a>
