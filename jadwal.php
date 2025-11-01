@@ -20,29 +20,7 @@
                 </p>
             </div>
             
-            <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">Waktu Mundur Menuju Ujian TKA</h2>
-                <div id="countdown-wrapper" class="cta-gradient grid grid-cols-4 gap-4 p-6 md:p-8 rounded-2xl shadow-2xl text-white">
-                    <div class="text-center">
-                        <span id="days" class="text-4xl md:text-6xl font-extrabold">00</span>
-                        <span class="block text-sm md:text-base font-medium opacity-90">Hari</span>
-                    </div>
-                    <div class="text-center">
-                        <span id="hours" class="text-4xl md:text-6xl font-extrabold">00</span>
-                        <span class="block text-sm md:text-base font-medium opacity-90">Jam</span>
-                    </div>
-                    <div class="text-center">
-                        <span id="minutes" class="text-4xl md:text-6xl font-extrabold">00</span>
-                        <span class="block text-sm md:text-base font-medium opacity-90">Menit</span>
-                    </div>
-                    <div class="text-center">
-                        <span id="seconds" class="text-4xl md:text-6xl font-extrabold">00</span>
-                        <span class="block text-sm md:text-base font-medium opacity-90">Detik</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-20 mb-10">
+            <div class="text-center mt-10 mb-10">
                 <h2 class="text-3xl font-bold text-gray-800" data-aos="fade-up">Detail Jadwal per Jenjang</h2>
             </div>
 
@@ -57,6 +35,30 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform accordion-icon flex-shrink-0 text-slate-500"></i>
                     </button>
                     <div class="accordion-content">
+                        <div class="p-5 border-b border-blue-100 bg-blue-50/50">
+                            <h4 class="text-base font-semibold text-blue-800 mb-3 flex items-center">
+                                <i data-lucide="alarm-clock" class="w-5 h-5 mr-2"></i>
+                                Waktu Mundur Ujian (SD/MI)
+                            </h4>
+                            <div id="countdown-sd" class="grid grid-cols-4 gap-2 text-center">
+                                <div>
+                                    <span id="sd-days" class="text-3xl font-bold text-blue-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Hari</span>
+                                </div>
+                                <div>
+                                    <span id="sd-hours" class="text-3xl font-bold text-blue-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Jam</span>
+                                </div>
+                                <div>
+                                    <span id="sd-minutes" class="text-3xl font-bold text-blue-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Menit</span>
+                                </div>
+                                <div>
+                                    <span id="sd-seconds" class="text-3xl font-bold text-blue-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Detik</span>
+                                </div>
+                            </div>
+                        </div>
                         <ul class="space-y-3 p-5 text-gray-600">
                             <li class="flex items-center"><i data-lucide="calendar-plus" class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0"></i>Pendaftaran: 1 Februari - 28 Februari 2026</li>
                             <li class="flex items-center"><i data-lucide="printer" class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0"></i>Cetak Kartu Ujian: 10 Maret 2026</li>
@@ -75,6 +77,30 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform accordion-icon flex-shrink-0 text-slate-500"></i>
                     </button>
                     <div class="accordion-content">
+                        <div class="p-5 border-b border-purple-100 bg-purple-50/50">
+                            <h4 class="text-base font-semibold text-purple-800 mb-3 flex items-center">
+                                <i data-lucide="alarm-clock" class="w-5 h-5 mr-2"></i>
+                                Waktu Mundur Ujian (SMP/MTS)
+                            </h4>
+                            <div id="countdown-smp" class="grid grid-cols-4 gap-2 text-center">
+                                <div>
+                                    <span id="smp-days" class="text-3xl font-bold text-purple-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Hari</span>
+                                </div>
+                                <div>
+                                    <span id="smp-hours" class="text-3xl font-bold text-purple-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Jam</span>
+                                </div>
+                                <div>
+                                    <span id="smp-minutes" class="text-3xl font-bold text-purple-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Menit</span>
+                                </div>
+                                <div>
+                                    <span id="smp-seconds" class="text-3xl font-bold text-purple-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Detik</span>
+                                </div>
+                            </div>
+                        </div>
                         <ul class="space-y-3 p-5 text-gray-600">
                             <li class="flex items-center"><i data-lucide="calendar-plus" class="w-5 h-5 mr-3 text-purple-500 flex-shrink-0"></i>Pendaftaran: 1 Februari - 28 Februari 2026</li>
                             <li class="flex items-center"><i data-lucide="printer" class="w-5 h-5 mr-3 text-purple-500 flex-shrink-0"></i>Cetak Kartu Ujian: 12 Maret 2026</li>
@@ -93,6 +119,30 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform accordion-icon flex-shrink-0 text-slate-500"></i>
                     </button>
                     <div class="accordion-content">
+                        <div class="p-5 border-b border-teal-100 bg-teal-50/50">
+                            <h4 class="text-base font-semibold text-teal-800 mb-3 flex items-center">
+                                <i data-lucide="alarm-clock" class="w-5 h-5 mr-2"></i>
+                                Waktu Mundur Ujian (SMA/SMK/MA)
+                            </h4>
+                            <div id="countdown-sma" class="grid grid-cols-4 gap-2 text-center">
+                                <div>
+                                    <span id="sma-days" class="text-3xl font-bold text-teal-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Hari</span>
+                                </div>
+                                <div>
+                                    <span id="sma-hours" class="text-3xl font-bold text-teal-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Jam</span>
+                                </div>
+                                <div>
+                                    <span id="sma-minutes" class="text-3xl font-bold text-teal-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Menit</span>
+                                </div>
+                                <div>
+                                    <span id="sma-seconds" class="text-3xl font-bold text-teal-700">00</span>
+                                    <span class="block text-xs font-medium text-slate-500">Detik</span>
+                                </div>
+                            </div>
+                        </div>
                          <ul class="space-y-3 p-5 text-gray-600">
                             <li class="flex items-center"><i data-lucide="calendar-plus" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Pendaftaran: 1 Februari - 28 Februari 2026</li>
                             <li class="flex items-center"><i data-lucide="printer" class="w-5 h-5 mr-3 text-teal-500 flex-shrink-0"></i>Cetak Kartu Ujian: 14 Maret 2026</li>
@@ -108,53 +158,75 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. Countdown Timer ---
-    // [GANTI TANGGAL INI] Atur tanggal tujuan countdown kamu
-    const targetDate = new Date("June 1, 2026 08:00:00").getTime(); 
+    // --- 1. [BARU] Countdown Timer ---
+    
+    /**
+     * Fungsi untuk memulai countdown timer.
+     * @param {number} targetDate - Waktu tujuan (dalam milidetik).
+     * @param {string} idPrefix - Awalan ID untuk elemen (cth: "sd", "smp", "sma").
+     * @param {string} wrapperId - ID dari div pembungkus countdown.
+     */
+    function initializeCountdown(targetDate, idPrefix, wrapperId) {
+        const daysEl = document.getElementById(idPrefix + '-days');
+        const hoursEl = document.getElementById(idPrefix + '-hours');
+        const minutesEl = document.getElementById(idPrefix + '-minutes');
+        const secondsEl = document.getElementById(idPrefix + '-seconds');
+        const wrapperEl = document.getElementById(wrapperId);
 
-    const countdownInterval = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = targetDate - now;
+        if (!daysEl || !wrapperEl) return; // Failsafe jika elemen tidak ditemukan
 
-        if (distance < 0) {
-            clearInterval(countdownInterval);
-            document.getElementById("countdown-wrapper").innerHTML = '<div class="col-span-4 text-center text-2xl font-bold">Ujian Telah Dimulai!</div>';
-            return;
-        }
+        const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if (distance < 0) {
+                clearInterval(interval);
+                wrapperEl.innerHTML = '<div class="text-center text-lg font-bold text-slate-700 py-4">Ujian Telah Dimulai!</div>';
+                return;
+            }
 
-        // Update elemen HTML
-        document.getElementById("days").innerHTML = days < 10 ? '0' + days : days;
-        document.getElementById("hours").innerHTML = hours < 10 ? '0' + hours : hours;
-        document.getElementById("minutes").innerHTML = minutes < 10 ? '0' + minutes : minutes;
-        document.getElementById("seconds").innerHTML = seconds < 10 ? '0' + seconds : seconds;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    }, 1000);
+            daysEl.innerHTML = days < 10 ? '0' + days : days;
+            hoursEl.innerHTML = hours < 10 ? '0' + hours : hours;
+            minutesEl.innerHTML = minutes < 10 ? '0' + minutes : minutes;
+            secondsEl.innerHTML = seconds < 10 ? '0' + seconds : seconds;
+        }, 1000);
+    }
+
+    // --- [GANTI TANGGAL INI] ---
+    // Atur tanggal tujuan countdown kamu (berdasarkan tanggal UJIAN TULIS)
+    const dateSD = new Date("March 15, 2026 08:00:00").getTime();
+    const dateSMP = new Date("March 18, 2026 08:00:00").getTime();
+    const dateSMA = new Date("March 20, 2026 08:00:00").getTime();
+    
+    // Panggil 3 countdown yang berbeda
+    initializeCountdown(dateSD, "sd", "countdown-sd");
+    initializeCountdown(dateSMP, "smp", "countdown-smp");
+    initializeCountdown(dateSMA, "sma", "countdown-sma");
+
 
     // --- 2. Accordion Logic ---
-    // (Script ini diambil dari file referensi kamu)
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     
     if (accordionHeaders.length > 0) {
-        accordionHeaders.forEach(header => {
-            // Kita buat agar yang pertama (SD/MI) langsung terbuka
-            if (header.parentElement.firstElementChild === header) {
-                const firstContent = header.nextElementSibling;
-                const firstIcon = header.querySelector('.accordion-icon');
-                if(firstContent) firstContent.style.maxHeight = firstContent.scrollHeight + "px";
-                if(firstIcon) firstIcon.style.transform = 'rotate(180deg)';
+        accordionHeaders.forEach((header, index) => {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+
+            // Buka item pertama (SD/MI) secara default
+            if (index === 0) {
+                if(content) content.style.maxHeight = content.scrollHeight + "px";
+                if(icon) icon.style.transform = 'rotate(180deg)';
                 header.classList.add('open');
             } else {
-                 header.nextElementSibling.style.maxHeight = null;
+                 if(content) content.style.maxHeight = null;
             }
 
             header.addEventListener('click', () => {
-                const content = header.nextElementSibling;
-                const icon = header.querySelector('.accordion-icon');
                 const isOpen = content.style.maxHeight;
 
                 // Tutup semua accordion lain
