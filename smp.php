@@ -4,7 +4,7 @@
     $page_description = 'Pilih mata pelajaran TKA SMP/MTS yang ingin kamu pelajari: Matematika, Bahasa Indonesia, Bahasa Inggris, IPA, dan IPS.';
     
     // Memasukkan file header.php
-    include '../header.php'; // [PENTING] Gunakan ../header.php karena kita ada di dalam sub-folder
+    include 'header.php'; // [PENTING] Gunakan ../header.php karena kita ada di dalam sub-folder
 ?>
 
 <main>
@@ -84,5 +84,5 @@
 </main>
 <?php 
     // Memasukkan file footer.php
-    include '../footer.php'; // [PENTING] Gunakan ../footer.php
+    include 'footer.php'; // [PENTING] Gunakan ../footer.php
 ?>
