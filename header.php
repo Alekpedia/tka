@@ -14,7 +14,10 @@
     <meta name="google-site-verification" content="vbH6pQeUamJFGybWjpJ9Gqn8FnEX-JPDtecJYGW9fb8" />
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-270x270.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
