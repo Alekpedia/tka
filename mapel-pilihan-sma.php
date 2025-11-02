@@ -180,5 +180,5 @@
 </main>
 <?php 
     // Memasukkan file footer.php
-    include '/footer.php'; // [PENTING] Gunakan ../footer.php
+    include 'footer.php'; // [PENTING] Gunakan ../footer.php
 ?>
