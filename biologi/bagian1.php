@@ -1,5 +1,5 @@
 <?php 
-
+    // [PENTING] Tidak ada kode proteksi di sini (sesuai permintaanmu)
 
     // ==================================================
     // 2. META TAG & HEADER
@@ -7,7 +7,7 @@
     $page_title = 'Materi Biologi: Klasifikasi Makhluk Hidup';
     $page_description = 'Pelajari materi TKA Biologi lengkap tentang klasifikasi dan keanekaragaman makhluk hidup, dari 5 kingdom hingga virus.';
     
-    // Path include 2 level (../../)
+    // [DIUBAH] Path include harus menggunakan ../ untuk naik satu level
     include '../header.php'; 
 ?>
 
@@ -108,53 +108,7 @@
                         </div>
                     </div>
                     
-                    <div class="border border-amber-200 rounded-lg bg-white overflow-hidden">
-                        <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-left text-slate-800 bg-amber-50">
-                            <span class="flex items-center space-x-3"><i data-lucide="venetian-mask" class="w-6 h-6 text-amber-600"></i><span class="text-lg font-bold">3. Kingdom Fungi (Jamur)</span></span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform accordion-icon flex-shrink-0 text-slate-500"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="p-5 text-gray-600 prose max-w-none">
-                                <p>Eukariotik, tidak bisa berfotosintesis (heterotrof), dan mendapatkan makanan dengan menyerap zat (saprofit atau parasit). Dinding sel terbuat dari kitin.</p>
-                                <ul class="materi-list">
-                                    <li>Contoh: Jamur tiram (Basidiomycota), Ragi (Ascomycota), Jamur tempe (Zygomycota).</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-
-                    <div class="border border-green-200 rounded-lg bg-white overflow-hidden">
-                        <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-left text-slate-800 bg-green-50">
-                            <span class="flex items-center space-x-3"><i data-lucide="leaf" class="w-6 h-6 text-green-600"></i><span class="text-lg font-bold">4. Kingdom Plantae (Tumbuhan)</span></span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform accordion-icon flex-shrink-0 text-slate-500"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="p-5 text-gray-600 prose max-w-none">
-                                <p>Eukariotik, multiseluler, dan bisa berfotosintesis (autotrof). Dinding sel terbuat dari selulosa.</p>
-                                <ul class="materi-list">
-                                    <li><strong>Tumbuhan Tak Berpembuluh:</strong> Lumut (Bryophyta).</li>
-                                    <li><strong>Tumbuhan Berpembuluh:</strong> Paku-pakuan (Pteridophyta), Tumbuhan Berbiji (Spermatophyta).</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-rose-200 rounded-lg bg-white overflow-hidden">
-                        <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-left text-slate-800 bg-rose-50">
-                            <span class="flex items-center space-x-3"><i data-lucide="cat" class="w-6 h-6 text-rose-600"></i><span class="text-lg font-bold">5. Kingdom Animalia (Hewan)</span></span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform accordion-icon flex-shrink-0 text-slate-500"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="p-5 text-gray-600 prose max-w-none">
-                                <p>Eukariotik, multiseluler, heterotrof, dan dapat bergerak aktif. Tidak memiliki dinding sel.</p>
-                                <ul class="materi-list">
-                                    <li><strong>Invertebrata (Tak Bertulang Belakang):</strong> Porifera, Coelenterata, Arthropoda, Mollusca, dll.</li>
-                                    <li><strong>Vertebrata (Bertulang Belakang):</strong> Pisces, Amphibia, Reptilia, Aves, Mammalia.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 
                 <div class="prose prose-lg max-w-none mt-10" data-aos="fade-up">
                     <h3 class="font-bold text-2xl mt-8">Keanekaragaman Hayati</h3>
@@ -228,6 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <?php 
-    // Memasukkan file footer.php
-    include '../footer.php'; // [PENTING] Gunakan ../../footer.php
+    // [DIUBAH] Path include harus menggunakan ../ untuk naik satu level
+    include '../footer.php'; 
 ?>
