@@ -8,7 +8,7 @@
     $page_description = 'Pelajari materi TKA Biologi lengkap tentang klasifikasi dan keanekaragaman makhluk hidup, dari 5 kingdom hingga virus.';
     
     // Path include 2 level (../../)
-    include '../../header.php'; 
+    include '../../../header.php'; 
 ?>
 
 <main>
@@ -229,5 +229,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <?php 
     // Memasukkan file footer.php
-    include '../../footer.php'; // [PENTING] Gunakan ../../footer.php
+    include '../../../footer.php'; // [PENTING] Gunakan ../../footer.php
 ?>
