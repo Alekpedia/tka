@@ -1,14 +1,16 @@
-# Mengaktifkan Mesin Rewrite
+# Aktifkan FollowSymLinks (penting untuk MAMP)
+Options +FollowSymLinks -Indexes
 RewriteEngine On
 
-# Mengalihkan (Redirect) user yang mengetik .php ke URL tanpa .php
-# Contoh: /latihan-sd.php -> /latihan-sd
+# Tentukan "base" dari website kamu
+RewriteBase /
+
+# Aturan 1: Redirect jika user mengetik .php
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
 
-# Menyembunyikan ekstensi .php secara internal
-# Contoh: Saat user meminta /latihan-sd, server akan memuat /latihan-sd.php
+# Aturan 2: Sembunyikan .php (aturan internal)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^([\w-]+)/?$ $1.php [L,QSA]
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
