@@ -4,7 +4,7 @@
     $page_description = 'Daftar lengkap mata pelajaran pilihan TKA SMA/SMK/MA, dari Fisika, Kimia, Ekonomi, Sosiologi, dan lainnya.';
     
     // Memasukkan file header.php
-    include '../header.php'; // [PENTING] Gunakan ../header.php
+    include 'header.php'; // [PENTING] Gunakan ../header.php
 ?>
 
 <main>
@@ -180,5 +180,5 @@
 </main>
 <?php 
     // Memasukkan file footer.php
-    include '../footer.php'; // [PENTING] Gunakan ../footer.php
+    include '/footer.php'; // [PENTING] Gunakan ../footer.php
 ?>
