@@ -46,6 +46,16 @@
     <link rel="icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-180x180.png" />
     <meta name="msapplication-TileImage" content="https://kampusimpian.com/wp-content/uploads/2025/10/cropped-android-chrome-512x512-1-270x270.png" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943212839280205"
+     crossorigin="anonymous"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MW8MQJG8');</script>
+<!-- End Google Tag Manager -->
 
     <style>
         body {
