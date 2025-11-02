@@ -1,17 +1,5 @@
 <?php 
-    // ==================================================
-    // 1. GERBANG PENGECEKAN AKSES
-    // ==================================================
-    if (session_status() === PHP_SESSION_NONE) {
-        session_start();
-    }
-    
-    // Cek apakah user punya akses
-    if (!isset($_SESSION['user_has_access']) || $_SESSION['user_has_access'] !== true) {
-        // Jika TIDAK, alihkan ke halaman 'akses'
-        header('Location: /akses?redirect_to=' . urlencode($_SERVER['REQUEST_URI']));
-        exit;
-    }
+
 
     // ==================================================
     // 2. META TAG & HEADER
