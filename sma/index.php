@@ -4,7 +4,7 @@
     $page_description = 'Pilih mata pelajaran SMA/SMK/MA yang ingin kamu pelajari: Matematika, Bahasa Indonesia, Bahasa Inggris, dan Mapel Pilihan.';
     
     // Memasukkan file header.php
-    include 'header.php'; // [PENTING] Gunakan ../header.php karena kita ada di dalam sub-folder
+    include '../header.php'; 
 ?>
 
 <main>
@@ -18,7 +18,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
 
-                <a href="/tka/bahasa-indonesia-sma" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20" data-aos="fade-up" data-aos-delay="100">
+                <a href="bahasa-indonesia" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-blue-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="book-text" class="w-7 h-7 text-blue-600"></i>
@@ -30,7 +30,7 @@
                     </div>
                 </a>
 
-                <a href="/tka/matematika-sma" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-rose-500/20" data-aos="fade-up" data-aos-delay="150">
+                <a href="matematika" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-rose-500/20" data-aos="fade-up" data-aos-delay="150">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-rose-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="calculator" class="w-7 h-7 text-rose-600"></i>
@@ -42,7 +42,7 @@
                     </div>
                 </a>
 
-                <a href="/tka/bahasa-inggris-sma" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20" data-aos="fade-up" data-aos-delay="200">
+                <a href="bahasa-inggris" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-purple-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="globe-2" class="w-7 h-7 text-purple-600"></i>
@@ -54,7 +54,7 @@
                     </div>
                 </a>
 
-                <a href="/tka/mapel-pilihan-sma" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20" data-aos="fade-up" data-aos-delay="250">
+                <a href="mapel-pilihan" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20" data-aos="fade-up" data-aos-delay="250">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-green-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="shapes" class="w-7 h-7 text-green-600"></i>
@@ -72,5 +72,5 @@
 </main>
 <?php 
     // Memasukkan file footer.php
-    include 'footer.php'; // [PENTING] Gunakan ../footer.php
+    include '../footer.php'; 
 ?>

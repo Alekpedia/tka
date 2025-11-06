@@ -98,15 +98,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/" class="text-2xl font-bold text-blue-800">
+        <a href="/tka/" class="text-2xl font-bold text-blue-800">
             Kampus Impian
         </a>
         
         <div class="hidden md:flex items-center space-x-8">
-            <a href="/tka" class="text-gray-600 hover:text-blue-700 font-medium">Beranda</a>
-            <a href="/tka/sd" class="text-gray-600 hover:text-blue-700 font-medium">SD/MI</a>
-            <a href="/tka/smp" class="text-gray-600 hover:text-blue-700 font-medium">SMP/MTS</a>
-            <a href="/tka/sma" class="text-gray-600 hover:text-blue-700 font-medium">SMA/SMK/MA</a>
+            <a href="/tka/" class="text-gray-600 hover:text-blue-700 font-medium">Beranda</a>
+            <a href="/tka/sd/" class="text-gray-600 hover:text-blue-700 font-medium">SD/MI</a>
+            <a href="/tka/smp/" class="text-gray-600 hover:text-blue-700 font-medium">SMP/MTS</a>
+            <a href="/tka/sma/" class="text-gray-600 hover:text-blue-700 font-medium">SMA/SMK/MA</a>
         </div>
 
         <a href="#" target="_blank" class="hidden md:inline-flex items-center justify-center btn-whatsapp text-white font-semibold px-6 py-2 rounded-lg shadow-md transition-transform transform">
@@ -122,10 +122,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </nav>
     
     <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-        <a href="/tka" class="block py-2 text-gray-600 hover:text-blue-700">Beranda</a>
-        <a href="/tka/sd" class="block py-2 text-gray-600 hover:text-blue-700"> SD/MI</a>
-        <a href="/tka/smp" class="block py-2 text-gray-600 hover:text-blue-700"> SMP/MTS</a>
-        <a href="/tka/sma" class="block py-2 text-gray-600 hover:text-blue-700"> SMA/SMK/MA</a>
+        <a href="/tka/" class="block py-2 text-gray-600 hover:text-blue-700">Beranda</a>
+        <a href="/tka/sd/" class="block py-2 text-gray-600 hover:text-blue-700"> SD/MI</a>
+        <a href="/tka/smp/" class="block py-2 text-gray-600 hover:text-blue-700"> SMP/MTS</a>
+        <a href="/tka/sma/" class="block py-2 text-gray-600 hover:text-blue-700"> SMA/SMK/MA</a>
         
         <a href="#" target="_blank" class="flex items-center justify-center mt-4 btn-whatsapp text-white text-center font-semibold px-6 py-2 rounded-lg shadow-md">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="w-5 h-5 mr-2">

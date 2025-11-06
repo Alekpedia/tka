@@ -1,14 +1,13 @@
 <?php 
     // Definisikan meta tag untuk halaman ini
-    $page_title = 'Latihan Soal TKA Bahasa Indonesia SMA/SMK/MA';
-    $page_description = 'Pilih paket soal latihan TKA Bahasa Indonesia SMA/SMK/MA yang ingin kamu kerjakan di bawah ini.';
+    $page_title = 'Latihan Soal TKA Matematika SMP/MTS';
+    $page_description = 'Pilih paket soal latihan TKA Matematika SMP/MTS yang ingin kamu kerjakan di bawah ini.';
 
-    // [PENTING] Path include berubah menjadi '../../' karena kita 2 level di dalam folder
-    include 'header.php'; 
+    include '../header.php'; 
 ?>
 
 <main>
-    <section id="latihan-mat-sma" class="py-20 bg-slate-50">
+    <section id="latihan-mat-smp" class="py-20 bg-slate-50">
         <div class="container mx-auto px-6">
 
             <div class="text-center mb-16">
@@ -16,7 +15,7 @@
                     Latihan Soal TKA
                 </h1>
                 <h2 class="text-3xl md:text-4xl font-semibold text-gray-700 mt-2" data-aos="fade-up" data-aos-delay="100">
-                    Bahasa Indonesia SMA/SMK/MA
+                    Matematika SMP/MTs
                 </h2>
                 <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                     Silakan pilih paket soal yang ingin Kamu kerjakan di bawah ini.
@@ -25,7 +24,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 
-                <a href="#" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20" data-aos="fade-up" data-aos-delay="100">
+                <a href="paket-1" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-blue-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="play-circle" class="w-7 h-7 text-blue-600"></i>
@@ -37,7 +36,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20" data-aos="fade-up" data-aos-delay="150">
+                <a href="paket-2" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20" data-aos="fade-up" data-aos-delay="150">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-purple-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="play-circle" class="w-7 h-7 text-purple-600"></i>
@@ -49,7 +48,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-teal-500/20" data-aos="fade-up" data-aos-delay="200">
+                <a href="paket-3" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-teal-500/20" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-teal-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="play-circle" class="w-7 h-7 text-teal-600"></i>
@@ -103,6 +102,5 @@
     </section>
 </main>
 <?php 
-    // [PENTING] Path include berubah menjadi '../../' 
-    include 'footer.php'; 
+    include '../footer.php'; 
 ?>

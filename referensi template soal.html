@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal TKA: Pemahaman Kosakata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Warm neutral background */
+            color: #4A4A4A;
+        }
+        .option-button, .category-button {
+            transition: all 0.3s ease;
+            border: 2px solid #D1C7BC; /* Soft border */
+        }
+        .option-button:hover, .category-button:hover {
+            background-color: #E9E4DE; /* Lighter hover */
+            border-color: #A59481; /* Darker border on hover */
+        }
+        .option-button.selected, .category-button.selected {
+            background-color: #A59481; /* Main accent color */
+            color: #FFFFFF;
+            border-color: #A59481;
+        }
+        .option-button.correct, .category-button.correct {
+            background-color: #4CAF50 !important;
+            color: white !important;
+            border-color: #4CAF50 !important;
+        }
+        .option-button.incorrect, .category-button.incorrect {
+            background-color: #F44336 !important;
+            color: white !important;
+            border-color: #F44336 !important;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #E9E4DE;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .submit-button {
+            background-color: #6D5F50; /* Darker accent for submission */
+            color: white;
+        }
+        .submit-button:disabled {
+            background-color: #C8C8C8;
+            cursor: not-allowed;
+        }
+        .question-text {
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-7xl">
+        
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-[#4A4A4A] mb-2">Latihan Soal TKA: Kosakata Umum dan Khusus</h1>
+            <p class="text-lg text-[#6B6B6B]">Kurikulum Merdeka Fase C & K13 Kelas VI</p>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div id="question-container" class="lg:col-span-2 space-y-6">
+                <!-- Soal akan dimuat di sini oleh JavaScript -->
+            </div>
+
+            <aside class="lg:col-span-1">
+                <div class="sticky top-8">
+                    <div class="card p-6 rounded-xl">
+                        <h2 class="text-xl font-bold mb-4 text-center">Laporan Skor</h2>
+                        <div class="chart-container relative w-full max-w-xs mx-auto h-64">
+                            <canvas id="scoreChart"></canvas>
+                        </div>
+                        <div id="score-details" class="mt-4 text-center">
+                            <p class="text-lg">Total Soal: <span id="total-questions" class="font-semibold">0</span></p>
+                            <p class="text-lg">Benar: <span id="correct-answers" class="font-semibold text-green-600">0</span></p>
+                            <p class="text-lg">Salah: <span id="incorrect-answers" class="font-semibold text-red-600">0</span></p>
+                            <button id="reset-button" class="mt-4 w-full bg-[#A59481] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">Ulangi Latihan</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script>
+        const questions = [
+            // Level 1: Pemahaman Tekstual Eksplisit
+            { 
+                type: 'mcq', 
+                level: 1, 
+                question: "Perhatikan kalimat berikut:\n'Saat berkemah, kami membuat api unggun agar suasana malam menjadi *hangat*.'\n\nBerdasarkan kalimat tersebut, apakah arti dari kata *hangat*?", 
+                indicator: "Mengidentifikasi makna kosakata umum dalam konteks kalimat sederhana.",
+                options: ["Terasa sangat panas", "Terasa agak panas dan nyaman", "Terasa sangat dingin", "Terasa gelap gulita"],
+                answer: "Terasa agak panas dan nyaman",
+                explanation: "Kata **hangat** berarti memiliki suhu di antara panas dan dingin, sehingga terasa nyaman. Api unggun membuat udara di sekitarnya menjadi nyaman, tidak terlalu panas dan tidak dingin."
+            },
+            { 
+                type: 'category', 
+                level: 1, 
+                question: "Bacalah cerita berikut:\n'Pagi itu cuaca sangat *cerah*. Ayah mengajakku ke kebun binatang. Di sana, kami melihat gajah yang *bertubuh besar* dan monyet yang *lincah* melompat dari pohon ke pohon.'\n\nTentukan apakah pernyataan berikut Benar atau Salah sesuai cerita.", 
+                indicator: "Mengelompokkan informasi berdasarkan makna kata sifat dalam teks deskriptif.",
+                statements: [
+                    { text: "Kata 'cerah' berarti cuaca sedang hujan.", answer: false },
+                    { text: "Kata 'bertubuh besar' berarti gajah itu kecil.", answer: false },
+                    { text: "Kata 'lincah' berarti monyet itu bergerak dengan cepat.", answer: true }
+                ],
+                explanation: "1. **Salah**, 'cerah' berarti langit terang dan tidak mendung. 2. **Salah**, 'bertubuh besar' berarti ukurannya raksasa. 3. **Benar**, 'lincah' berarti bisa bergerak dengan cepat dan mudah."
+            },
+            // Level 2: Pemahaman Tekstual & Inferensial Awal
+            { 
+                type: 'mcq', 
+                level: 2, 
+                question: "Perhatikan kalimat berikut:\n'Seorang *koki* sedang menyiapkan bahan-bahan di dapur. Ia memakai celemek dan topi tinggi. Ia akan memasak *menu* spesial hari ini.'\n\nBerdasarkan kata-kata dalam kalimat itu, di manakah orang tersebut bekerja?", 
+                indicator: "Menyimpulkan tempat kerja seseorang berdasarkan kosakata yang berhubungan dengan profesinya.",
+                options: ["Di sekolah", "Di rumah sakit", "Di restoran", "Di kantor polisi"],
+                answer: "Di restoran",
+                explanation: "Kata **'koki'** (juru masak), **'dapur'**, dan **'menu'** (daftar makanan) adalah kata-kata yang berhubungan dengan tempat makan seperti restoran."
+            },
+            { 
+                type: 'mcma', 
+                level: 2, 
+                question: "Bacalah teks berikut:\n'Membuang sampah sembarangan dapat menyebabkan *banjir* saat musim hujan. Selain itu, lingkungan menjadi *kotor* dan menjadi sarang penyakit.'\n\nManakah akibat buruk dari membuang sampah sembarangan menurut teks? (Pilih lebih dari satu jawaban)", 
+                indicator: "Mengidentifikasi lebih dari satu akibat dari suatu tindakan berdasarkan kosakata dalam teks.",
+                options: [
+                    "Lingkungan menjadi bersih dan sehat",
+                    "Air sungai meluap dan menggenangi daratan",
+                    "Lingkungan menjadi tidak enak dipandang",
+                    "Udara menjadi lebih segar",
+                    "Timbulnya berbagai macam penyakit"
+                ],
+                answer: ["Air sungai meluap dan menggenangi daratan", "Lingkungan menjadi tidak enak dipandang", "Timbulnya berbagai macam penyakit"],
+                explanation: "Kata **'banjir'** berarti air meluap. Lingkungan **'kotor'** berarti tidak enak dipandang. Menjadi **'sarang penyakit'** berarti bisa membuat orang sakit."
+            },
+            // Level 3: Pemahaman Inferensial
+            { 
+                type: 'mcq', 
+                level: 3, 
+                question: "Simak cerita singkat ini:\n'Walaupun gambarnya sempat diejek teman, Budi tidak marah. Ia terus *berlatih* setiap hari. Akhirnya, gambar Budi menjadi yang paling bagus di kelas.'\n\nSifat apa yang dimiliki Budi berdasarkan cerita tersebut?", 
+                indicator: "Menarik kesimpulan tentang sifat karakter berdasarkan tindakan yang dijelaskan.",
+                options: ["Pemalas", "Sombong", "Mudah menyerah", "Tekun dan sabar"],
+                answer: "Tekun dan sabar",
+                explanation: "Tindakan Budi yang terus **'berlatih'** setiap hari meskipun diejek menunjukkan bahwa ia rajin dan tidak mudah menyerah. Inilah yang disebut **tekun**. Ia juga tidak marah saat diejek, yang menunjukkan ia **sabar**."
+            },
+            { 
+                type: 'category', 
+                level: 3, 
+                question: "Bacalah deskripsi berikut:\n'Suasana di perpustakaan sangat *tenang*. Semua anak membaca buku dengan *serius*. Hanya terdengar suara lembaran buku yang dibalik.'\n\nTentukan apakah kesimpulan berikut Benar atau Salah berdasarkan deskripsi tersebut.", 
+                indicator: "Menarik kesimpulan tentang suasana suatu tempat berdasarkan pilihan kata.",
+                statements: [
+                    { text: "Suasana di perpustakaan sangat berisik.", answer: false },
+                    { text: "Anak-anak di sana suka membaca buku.", answer: true },
+                    { text: "Tidak ada yang mematuhi aturan di perpustakaan.", answer: false }
+                ],
+                explanation: "1. **Salah**, kata 'tenang' adalah lawan dari berisik. 2. **Benar**, kata 'serius' menunjukkan bahwa mereka sungguh-sungguh dan suka membaca. 3. **Salah**, suasana yang 'tenang' menunjukkan anak-anak mematuhi aturan."
+            },
+            // Level 4: Evaluasi dan Apresiasi
+            { 
+                type: 'mcq', 
+                level: 4, 
+                question: "Perhatikan kalimat poster berikut:\n'Ayo selamatkan *Bumi Kita* dari tumpukan sampah! Jangan biarkan *masa depan* anak cucu kita menjadi *suram*!'\n\nMengapa penulis poster menggunakan kata-kata seperti 'selamatkan' dan 'suram'?", 
+                indicator: "Mengevaluasi tujuan penulis dalam menggunakan kata-kata yang kuat untuk mengajak bertindak.",
+                options: [
+                    "Agar poster terlihat lucu dan menarik",
+                    "Agar pembaca merasa masalahnya tidak penting",
+                    "Agar pembaca merasa peduli dan mau ikut menjaga kebersihan",
+                    "Agar pembaca menjadi takut dan sedih saja"
+                ],
+                answer: "Agar pembaca merasa peduli dan mau ikut menjaga kebersihan",
+                explanation: "Penulis memilih kata-kata yang kuat seperti **'selamatkan'** dan **'suram'** (gelap/tanpa harapan) agar kita sadar bahwa masalah sampah itu gawat. Tujuannya adalah mengajak kita untuk berbuat sesuatu, bukan hanya untuk menakut-nakuti."
+            },
+            { 
+                type: 'mcma', 
+                level: 4, 
+                question: "Bacalah puisi singkat ini:\n'Angin sore *berbisik* padaku,\nmenyampaikan salam dari gunung yang biru.\nDaun-daun kering *menari-nari*,\nterbang gembira menyambut malam.'\n\nManakah pernyataan yang benar tentang cara penulis menggunakan kata-kata dalam puisi itu? (Pilih lebih dari satu jawaban)", 
+                indicator: "Menganalisis penggunaan bahasa kiasan (gaya bahasa) yang membuat benda mati seolah-olah hidup.",
+                options: [
+                    "Penulis membuat angin seolah-olah bisa bicara.",
+                    "Puisi ini menceritakan suasana yang menyedihkan.",
+                    "Penulis membuat daun-daun seolah-olah bisa menari.",
+                    "Puisi ini menggambarkan suasana siang hari yang panas.",
+                    "Kata 'menari-nari' membuat daun terlihat bergerak indah."
+                ],
+                answer: ["Penulis membuat angin seolah-olah bisa bicara.", "Penulis membuat daun-daun seolah-olah bisa menari.", "Kata 'menari-nari' membuat daun terlihat bergerak indah."],
+                explanation: "Angin tidak bisa **'berbisik'** dan daun tidak bisa **'menari'**. Penulis menggunakan kata-kata ini agar puisinya terasa lebih hidup dan indah. Suasana yang digambarkan adalah sore hari yang menyenangkan, bukan sedih atau panas."
+            },
+            // Level 5: Evaluasi dan Apresiasi Lanjutan
+            { 
+                type: 'mcq', 
+                level: 5, 
+                question: "Cermati kalimat berikut:\n'Tindakan *penebangan liar* itu sangat merugikan. Hutan menjadi gundul dan hewan kehilangan tempat tinggal. Ini adalah perbuatan yang tidak *bertanggung jawab*.'\n\nBagaimana perasaan penulis terhadap tindakan penebangan liar, menurut pilihan katanya?", 
+                indicator: "Mengevaluasi dan menyimpulkan sikap penulis (setuju/tidak setuju) berdasarkan pilihan kata yang digunakan.",
+                options: [
+                    "Penulis merasa tindakan itu biasa saja.",
+                    "Penulis sangat tidak setuju dan menganggapnya perbuatan buruk.",
+                    "Penulis mendukung tindakan penebangan liar.",
+                    "Penulis tidak peduli dengan keadaan hutan."
+                ],
+                answer: "Penulis sangat tidak setuju dan menganggapnya perbuatan buruk.",
+                explanation: "Penggunaan kata **'merugikan'** dan **'tidak bertanggung jawab'** menunjukkan bahwa penulis memiliki sikap yang sangat menentang. Ia ingin memberitahu pembaca bahwa penebangan liar adalah hal yang salah dan berbahaya."
+            },
+            { 
+                type: 'mcma', 
+                level: 5, 
+                question: "Bacalah teks berikut:\n'Bermain game ada *sisi baik* dan *sisi buruknya*. Sisi baiknya, game bisa melatih *ketangkasan* berpikir. Sisi buruknya, jika berlebihan bisa membuat kita lupa waktu belajar dan menjadi *malas* bergerak.'\n\nManakah pernyataan yang paling tepat dalam menilai teks tersebut? (Pilih lebih dari satu jawaban)", 
+                indicator: "Mengevaluasi sebuah teks yang menyajikan dua sisi (positif dan negatif) dari suatu hal.",
+                options: [
+                    "Teks ini hanya menjelaskan hal-hal buruk tentang game.",
+                    "Penulis menjelaskan bahwa game punya manfaat dan juga kerugian.",
+                    "Kata 'ketangkasan' menunjukkan salah satu manfaat bermain game.",
+                    "Menurut teks, bermain game selalu membuat anak menjadi pintar.",
+                    "Kata 'malas' menunjukkan salah satu kerugian jika bermain game berlebihan."
+                ],
+                answer: ["Penulis menjelaskan bahwa game punya manfaat dan juga kerugian.", "Kata 'ketangkasan' menunjukkan salah satu manfaat bermain game.", "Kata 'malas' menunjukkan salah satu kerugian jika bermain game berlebihan."],
+                explanation: "Teks ini seimbang, menjelaskan **sisi baik** (manfaat) seperti melatih **'ketangkasan'**, dan **sisi buruk** (kerugian) seperti menjadi **'malas'**. Teks ini tidak mengatakan game itu selalu baik atau selalu buruk, tetapi mengingatkan kita untuk tidak berlebihan."
+            }
+        ];
+
+        let userAnswers = {};
+        let scoreChart;
+
+        const questionContainer = document.getElementById('question-container');
+        const resetButton = document.getElementById('reset-button');
+        document.getElementById('total-questions').textContent = questions.length;
+
+        const renderQuestions = () => {
+            questionContainer.innerHTML = '';
+            
+            questions.forEach((q, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.className = 'card p-6 rounded-xl';
+                let contentHTML = `
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold">Soal ${index + 1}</h3>
+                            <p class="text-xs text-gray-500 font-medium">${getQuestionType(q.type)}</p>
+                        </div>
+                        <span class="text-sm font-semibold bg-[#E9E4DE] text-[#A59481] px-3 py-1 rounded-full">Level ${q.level}</span>
+                    </div>
+                    <p class="mb-2 text-gray-500 text-sm"><strong>Indikator:</strong> ${q.indicator}</p>
+                    <p class="mb-4 text-lg question-text">${q.question.replace(/\*(.*?)\*/g, '<i class="font-semibold text-[#A59481] not-italic">$1</i>')}</p>
+                    <div id="options-${index}" class="space-y-3">
+                `;
+
+                switch (q.type) {
+                    case 'mcq':
+                        contentHTML += q.options.map((opt, i) => `
+                            <button data-question-index="${index}" data-option-index="${i}" class="option-button w-full text-left p-3 rounded-lg">
+                                <span class="font-semibold mr-2">${String.fromCharCode(65 + i)}.</span> ${opt}
+                            </button>
+                        `).join('');
+                        break;
+                    case 'mcma':
+                        contentHTML += `<p class="text-sm text-gray-600 mb-3">Pilih semua jawaban yang benar.</p>`;
+                        contentHTML += q.options.map((opt, i) => `
+                            <label class="option-button flex items-center w-full text-left p-3 rounded-lg cursor-pointer">
+                                <input type="checkbox" data-question-index="${index}" data-option-index="${i}" class="mr-3 h-5 w-5 rounded border-gray-300 text-[#A59481] focus:ring-[#A59481]">
+                                ${opt}
+                            </label>
+                        `).join('');
+                        contentHTML += `<button data-question-index="${index}" class="submit-button mt-4 w-full px-4 py-2 rounded-lg">Kirim Jawaban</button>`;
+                        break;
+                    case 'category':
+                        contentHTML += `<p class="text-sm text-gray-600 mb-3">Tentukan Benar atau Salah untuk setiap pernyataan.</p>`;
+                        contentHTML += `<div class="space-y-3">` + q.statements.map((stmt, i) => `
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 border rounded-lg">
+                                <p class="flex-1 mb-2 sm:mb-0 sm:mr-4">${i+1}. ${stmt.text}</p>
+                                <div class="flex-shrink-0 flex gap-2">
+                                    <button data-question-index="${index}" data-statement-index="${i}" data-value="true" class="category-button px-4 py-1 rounded-md text-sm">Benar</button>
+                                    <button data-question-index="${index}" data-statement-index="${i}" data-value="false" class="category-button px-4 py-1 rounded-md text-sm">Salah</button>
+                                </div>
+                            </div>
+                        `).join('') + `</div>`;
+                        break;
+                }
+
+                contentHTML += `</div><div id="explanation-${index}" class="mt-4 hidden"></div>`;
+                questionCard.innerHTML = contentHTML;
+                questionContainer.appendChild(questionCard);
+            });
+            addEventListeners();
+            updateQuestionStates();
+        };
+
+        const getQuestionType = (type) => {
+            switch(type) {
+                case 'mcq': return 'Pilihan Ganda Sederhana';
+                case 'mcma': return 'Pilihan Ganda Kompleks (Jawaban Ganda)';
+                case 'category': return 'Pilihan Ganda Kompleks (Kategori)';
+                default: return '';
+            }
+        };
+        
+        const addEventListeners = () => {
+            document.querySelectorAll('.option-button').forEach(button => button.addEventListener('click', handleMcqAnswer));
+            document.querySelectorAll('.submit-button').forEach(button => button.addEventListener('click', handleSubmitMcmaAnswer));
+            document.querySelectorAll('input[type="checkbox"]').forEach(box => box.addEventListener('change', (e) => {
+                e.target.parentElement.classList.toggle('selected', e.target.checked);
+            }));
+            document.querySelectorAll('.category-button').forEach(button => button.addEventListener('click', handleCategoryAnswer));
+        };
+
+        const handleMcqAnswer = (e) => {
+            const questionIndex = e.currentTarget.dataset.questionIndex;
+            if (userAnswers[questionIndex] !== undefined) return;
+            const optionIndex = e.currentTarget.dataset.optionIndex;
+            const question = questions[questionIndex];
+            userAnswers[questionIndex] = {
+                selected: parseInt(optionIndex),
+                correct: question.options[optionIndex] === question.answer
+            };
+            updateQuestionStates();
+            updateScore();
+        };
+
+        const handleSubmitMcmaAnswer = (e) => {
+            const questionIndex = e.currentTarget.dataset.questionIndex;
+            if (userAnswers[questionIndex] !== undefined) return;
+            const question = questions[questionIndex];
+            const selectedOptions = Array.from(document.querySelectorAll(`#options-${questionIndex} input:checked`)).map(cb => questions[questionIndex].options[cb.dataset.optionIndex]);
+            const isCorrect = selectedOptions.length === question.answer.length && selectedOptions.every(opt => question.answer.includes(opt)) && question.answer.every(ans => selectedOptions.includes(ans));
+            userAnswers[questionIndex] = { selected: selectedOptions, correct: isCorrect };
+            updateQuestionStates();
+            updateScore();
+        };
+
+        const handleCategoryAnswer = (e) => {
+            const questionIndex = e.currentTarget.dataset.questionIndex;
+            if (userAnswers[questionIndex] && userAnswers[questionIndex].allAnswered) return;
+            const statementIndex = e.currentTarget.dataset.statementIndex;
+            const value = e.currentTarget.dataset.value === 'true';
+
+            if (!userAnswers[questionIndex]) {
+                userAnswers[questionIndex] = { selected: {}, allAnswered: false };
+            }
+            userAnswers[questionIndex].selected[statementIndex] = value;
+            
+            const parent = e.currentTarget.parentElement;
+            parent.querySelector('.selected')?.classList.remove('selected');
+            e.currentTarget.classList.add('selected');
+
+            const question = questions[questionIndex];
+            if (Object.keys(userAnswers[questionIndex].selected).length === question.statements.length) {
+                let allCorrect = true;
+                question.statements.forEach((stmt, i) => {
+                    if (stmt.answer !== userAnswers[questionIndex].selected[i]) {
+                        allCorrect = false;
+                    }
+                });
+                userAnswers[questionIndex].correct = allCorrect;
+                userAnswers[questionIndex].allAnswered = true;
+                updateQuestionStates();
+                updateScore();
+            }
+        };
+
+        const updateQuestionStates = () => {
+            for (let i = 0; i < questions.length; i++) {
+                if (userAnswers[i] === undefined) continue;
+
+                const question = questions[i];
+                const explanationDiv = document.getElementById(`explanation-${i}`);
+                if (!explanationDiv) continue;
+
+                explanationDiv.innerHTML = `<h4 class="font-bold mt-4 border-t pt-4">Pembahasan:</h4><p>${question.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>`;
+                explanationDiv.style.display = 'block';
+
+                switch (question.type) {
+                    case 'mcq':
+                        document.querySelectorAll(`#options-${i} .option-button`).forEach((btn, idx) => {
+                            btn.disabled = true;
+                            if (question.options[idx] === question.answer) btn.classList.add('correct');
+                            if (idx === userAnswers[i].selected && !userAnswers[i].correct) btn.classList.add('incorrect');
+                        });
+                        break;
+                    case 'mcma':
+                        document.querySelectorAll(`#options-${i} input[type="checkbox"]`).forEach(cb => cb.disabled = true);
+                        document.querySelector(`#options-${i} .submit-button`).style.display = 'none';
+                        document.querySelectorAll(`#options-${i} label`).forEach(label => {
+                            const optionText = label.innerText.trim();
+                            if (question.answer.includes(optionText)) label.classList.add('correct');
+                            if (userAnswers[i].selected.includes(optionText) && !question.answer.includes(optionText)) label.classList.add('incorrect');
+                        });
+                        break;
+                    case 'category':
+                        if (!userAnswers[i].allAnswered) break;
+                        document.querySelectorAll(`#options-${i} .category-button`).forEach(btn => btn.disabled = true);
+                        question.statements.forEach((stmt, idx) => {
+                            const selectedValue = userAnswers[i].selected[idx];
+                            const correctValue = stmt.answer;
+                            const buttons = document.querySelectorAll(`#options-${i} [data-statement-index='${idx}']`);
+                            buttons.forEach(b => {
+                                const btnValue = b.dataset.value === 'true';
+                                if (btnValue === correctValue) b.classList.add('correct');
+                                if (btnValue === selectedValue && selectedValue !== correctValue) b.classList.add('incorrect');
+                            });
+                        });
+                        break;
+                }
+            }
+        };
+
+        const updateScore = () => {
+            const answeredCount = Object.keys(userAnswers).length;
+            const correctCount = Object.values(userAnswers).filter(ans => ans.correct).length;
+            const incorrectCount = answeredCount - correctCount;
+
+            document.getElementById('correct-answers').textContent = correctCount;
+            document.getElementById('incorrect-answers').textContent = incorrectCount;
+            
+            if (scoreChart) {
+                scoreChart.data.datasets[0].data = [correctCount, incorrectCount, questions.length - answeredCount];
+                scoreChart.update();
+            }
+        };
+
+        const initChart = () => {
+            const ctx = document.getElementById('scoreChart').getContext('2d');
+            scoreChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Benar', 'Salah', 'Belum Dijawab'],
+                    datasets: [{
+                        data: [0, 0, questions.length],
+                        backgroundColor: ['#4CAF50', '#F44336', '#E0E0E0'],
+                        borderColor: ['#FFFFFF'],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                        legend: { position: 'bottom' },
+                        tooltip: { enabled: true }
+                    }
+                }
+            });
+        };
+
+        resetButton.addEventListener('click', () => {
+            userAnswers = {};
+            renderQuestions();
+            updateScore();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderQuestions();
+            initChart();
+            updateScore();
+        });
+    </script>
+</body>
+</html>

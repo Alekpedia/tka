@@ -5,6 +5,9 @@ RewriteEngine On
 # Tentukan "base" dari website kamu
 RewriteBase /
 
+# Aturan untuk serve index.php di dalam direktori
+DirectoryIndex index.php
+
 # Aturan 1: Redirect jika user mengetik .php
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]

@@ -4,7 +4,7 @@
     $page_description = 'Pilih paket soal latihan TKA Matematika SD/MI yang ingin kamu kerjakan di bawah ini.';
     
     // [PENTING] Path include berubah menjadi '../../' karena kita 2 level di dalam folder
-    include 'header.php'; 
+    include '../header.php'; 
 ?>
 
 <main>
@@ -25,7 +25,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 
-                <a href="#" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20" data-aos="fade-up" data-aos-delay="100">
+                <a href="matematika-paket-1" class="group block bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 bg-blue-100 p-3 rounded-xl transform transition-transform duration-300 group-hover:scale-110">
                             <i data-lucide="play-circle" class="w-7 h-7 text-blue-600"></i>
@@ -104,5 +104,5 @@
 </main>
 <?php 
     // [PENTING] Path include berubah menjadi '../../' 
-    include 'footer.php'; 
+    include '../footer.php'; 
 ?>
