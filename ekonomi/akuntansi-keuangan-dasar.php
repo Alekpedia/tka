@@ -4,7 +4,7 @@
     // ==================================================
     // 2. META TAG & HEADER
     // ==================================================
-    $page_title = 'Materi Ekonomi: Akuntansi Keuangan Dasar';
+    $page_title = 'Materi TKA Ekonomi: Akuntansi Keuangan Dasar';
     $page_description = 'Pelajari materi lengkap Akuntansi SMA, mulai dari Persamaan Dasar Akuntansi, Mekanisme Debit Kredit, Siklus Akuntansi, hingga Laporan Keuangan.';
     
     // [DIUBAH] Path include harus menggunakan ../ untuk naik satu level

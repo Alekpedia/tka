@@ -103,10 +103,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </a>
         
         <div class="hidden md:flex items-center space-x-8">
-            <a href="/tka/" class="text-gray-600 hover:text-blue-700 font-medium">Beranda</a>
-            <a href="/tka/sd/" class="text-gray-600 hover:text-blue-700 font-medium">SD/MI</a>
-            <a href="/tka/smp/" class="text-gray-600 hover:text-blue-700 font-medium">SMP/MTS</a>
-            <a href="/tka/sma/" class="text-gray-600 hover:text-blue-700 font-medium">SMA/SMK/MA</a>
+            <a href="/" class="text-gray-600 hover:text-blue-700 font-medium">Beranda</a>
+            <a href="#" class="text-gray-600 hover:text-blue-700 font-medium">SD/MI</a>
+            <a href="#" class="text-gray-600 hover:text-blue-700 font-medium">SMP/MTS</a>
+            <a href="https://kampusimpian.com/kumpulan-materi-tka-sma-smk-ma-lengkap/" class="text-gray-600 hover:text-blue-700 font-medium">SMA/SMK/MA</a>
         </div>
 
         <a href="#" target="_blank" class="hidden md:inline-flex items-center justify-center btn-whatsapp text-white font-semibold px-6 py-2 rounded-lg shadow-md transition-transform transform">
@@ -122,11 +122,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </nav>
     
     <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-        <a href="/tka/" class="block py-2 text-gray-600 hover:text-blue-700">Beranda</a>
-        <a href="/tka/sd/" class="block py-2 text-gray-600 hover:text-blue-700"> SD/MI</a>
-        <a href="/tka/smp/" class="block py-2 text-gray-600 hover:text-blue-700"> SMP/MTS</a>
-        <a href="/tka/sma/" class="block py-2 text-gray-600 hover:text-blue-700"> SMA/SMK/MA</a>
-        
+        <a href="/" class="block py-2 text-gray-600 hover:text-blue-700">Beranda</a>
+        <a href="#" class="block py-2 text-gray-600 hover:text-blue-700"> SD/MI</a>
+        <a href="#" class="block py-2 text-gray-600 hover:text-blue-700"> SMP/MTS</a>
+        <a href="https://kampusimpian.com/kumpulan-materi-tka-sma-smk-ma-lengkap/" class="block py-2 text-gray-600 hover:text-blue-700"> SMA/SMK/MA</a>
+
         <a href="#" target="_blank" class="flex items-center justify-center mt-4 btn-whatsapp text-white text-center font-semibold px-6 py-2 rounded-lg shadow-md">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="w-5 h-5 mr-2">
                 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.626-2.957 6.584-6.591 6.584zm-1.705-4.854c-.146-.077-.82-.403-1.028-.448-.206-.046-.353-.068-.499.068-.146.136-.39.448-.48.543-.09.095-.18.115-.33.068-.15-.046-.63-.232-1.2-.742-.44-.39-.73-.886-.82-1.033-.09-.147-.01-.224.06-.291.06-.06.14-.17.21-.258.07-.09.09-.14.12-.24.03-.09.02-.17 0-.248-.02-.077-.499-1.2-.68-1.646-.18-.445-.36-.383-.499-.383-.14.002-.3.023-.45.023s-.39.068-.59.332c-.2.262-.76.734-.76 1.79 0 1.057.78 2.072.88 2.218.11.146 1.54 2.35 3.74 3.3a12.35 12.35 0 0 0 1.28.473c.49.18.88.14.19.09.28-.05.82-.336.98-.65.16-.31.16-.58.11-.65s-.09-.11-.19-.19z"/>
