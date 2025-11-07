@@ -4,7 +4,7 @@
     // ==================================================
     // 2. META TAG & HEADER
     // ==================================================
-    $page_title = 'Materi Ekonomi: Konsep Dasar Ilmu Ekonomi';
+    $page_title = 'Materi TKA Ekonomi: Konsep Dasar Ilmu Ekonomi';
     $page_description = 'Pelajari materi lengkap Ekonomi SMA tentang konsep dasar ilmu ekonomi, kelangkaan, biaya peluang, prinsip, dan sistem ekonomi.';
     
     // [DIUBAH] Path include harus menggunakan ../ untuk naik satu level
@@ -49,7 +49,7 @@
         <div class="container mx-auto px-6">
 
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-lg font-semibold text-teal-600">Materi Ekonomi SMA</h2>
+                <h2 class="text-lg font-semibold text-teal-600">Materi TKA Ekonomi SMA</h2>
                 <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2">
                     Konsep Dasar Ilmu Ekonomi
                 </h1>

@@ -4,7 +4,7 @@
     // ==================================================
     // 2. META TAG & HEADER
     // ==================================================
-    $page_title = 'Materi Ekonomi: Ekonomi Mikro dan Makro';
+    $page_title = 'Materi TKA Ekonomi: Ekonomi Mikro dan Makro';
     $page_description = 'Perbedaan mendalam, ruang lingkup, dan contoh Ekonomi Mikro (demand, supply, pasar) dan Ekonomi Makro (inflasi, PDB, pengangguran).';
     
     // [DIUBAH] Path include harus menggunakan ../ untuk naik satu level
@@ -66,7 +66,7 @@
         <div class="container mx-auto px-6">
 
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-lg font-semibold text-teal-600">Materi Ekonomi SMA</h2>
+                <h2 class="text-lg font-semibold text-teal-600">Materi TKA Ekonomi SMA</h2>
                 <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2">
                     Ekonomi Mikro vs Makro
                 </h1>
